@@ -12,6 +12,7 @@ users = User.all
 10.times do
   Item.create!(
   name: Faker::Lorem.sentence,
+  user: users.sample
   )
 end
 items = Item.all
