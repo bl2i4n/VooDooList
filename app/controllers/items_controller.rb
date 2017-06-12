@@ -21,8 +21,4 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:name)
   end
 
-  def expired
-    
-  end
-
 end
