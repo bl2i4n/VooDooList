@@ -1,7 +1,7 @@
-<div class="item list-group-item">
+<div class="item list-group-item" id="item-<%= item.id %>">
   <button type="button" class="btn btn-default btn-md pull-right">
     <span class="glyphicon glyphicon-ok completed-icon"></span>
-    <%= link_to 'Item completed', user_item_path(@user.id, item.id), method: :delete %>
+    <%= link_to 'Item completed', user_item_path(@user.id, item.id), method: :delete, remote: true %>
   </button>
   <h4 class="list-group-item-heading"><%= item.name %></h4>
   <p class="list-group-item-text"><%= time_left(item) %></p>
