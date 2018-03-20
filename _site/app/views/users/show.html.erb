@@ -1,0 +1,9 @@
+<h1 class='list-title'><%= "#{current_user.email}'s todo list." %></h1>
+<div class="row">
+  <div id="items" class="items list-group col-md-8">
+    <%= render @items %>
+  </div>
+</div>
+<div class="col-md-6">
+  <%= render partial: 'items/form', locals: {user: @user} %>
+</div>
